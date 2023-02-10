@@ -1,0 +1,19 @@
+<!ELEMENT Los_Remedios_SA (pedido)>
+<!ELEMENT pedido (nombre_trabajador,fecha_pedido,obsevaciones?,sucursal)>
+<!ELEMENT nombre_trabajador (#PCDATA)>
+<!ELEMENT fecha_pedido (#PCDATA)>
+<!ELEMENT obsevaciones (#PCDATA)>
+<!ELEMENT sucursal (departamento_exposicion,departamento_gestion)>
+<!ATTLIST sucursal cogigo NMTOKEN #REQUIRED>
+<!ELEMENT departamento_exposicion (direccion?,articulos)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT articulos (articulo)>
+<!ELEMENT articulo (num_unidades_pedidas,precio_unidad,observaciones_articulo,plazo_revision)>
+<!ATTLIST articulo codigo_articulo NMTOKEN #REQUIRED>
+<!ELEMENT num_unidades_pedidas (#PCDATA)>
+<!ELEMENT precio_unidad (#PCDATA)>
+<!ELEMENT observaciones_articulo (#PCDATA)>
+<!ELEMENT plazo_revision (#PCDATA)>
+<!ELEMENT departamento_gestion (direccion?,albaran,pago)>
+<!ELEMENT albaran (#PCDATA)>
+<!ELEMENT pago (#PCDATA)>

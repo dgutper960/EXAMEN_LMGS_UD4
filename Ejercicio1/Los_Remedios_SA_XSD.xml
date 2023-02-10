@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Los_Remedios_SA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Los_Remedios_SA_XSD.xsd">
+    <pedido>
+        <nombre_trabajador>Antonio Flores</nombre_trabajador>
+        <fecha_pedido>12-02-1997</fecha_pedido>
+        <obsevaciones>urgente</obsevaciones> <!-- opcional valores (urgente|incompleto)-->
+        <sucursal cogigo="A6596325"> <!-- 8 CARACTERES PRIMERO UNA LETRA-->
+          <departamento_exposicion>
+            <direccion>Calle Los morales SN</direccion> <!-- opcional-->
+            <articulos>
+                <articulo codigo_articulo="AFT-659"> <!-- 3 mayusc - 3 num -->
+                    <num_unidades_pedidas>24</num_unidades_pedidas>
+                    <precio_unidad>4356</precio_unidad>
+                    <observaciones_articulo>Nuevo y reacondicionado</observaciones_articulo>
+                    <plazo_revision>15</plazo_revision>  <!-- expresado en días -->
+                </articulo>
+            </articulos>
+          </departamento_exposicion>
+          <departamento_gestion>
+            <direccion>Calle San Francisco - num 8</direccion>
+            <albaran>12632</albaran>
+            <pago>transferencia bancaria</pago>
+        </departamento_gestion>
+      </sucursal>
+    </pedido>
+</Los_Remedios_SA>
